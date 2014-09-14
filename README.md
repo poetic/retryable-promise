@@ -1,4 +1,4 @@
-# retryable-promise
+# retryable-promise [![Build Status](https://travis-ci.org/poetic/retryable-promise.svg?branch=master)](https://travis-ci.org/poetic/retryable-promise)
 
 A simple promise retry implementation that will retry a promise X times before
 rejecting.

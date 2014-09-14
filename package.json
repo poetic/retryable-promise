@@ -1,8 +1,8 @@
 {
   "name": "retriable-promise",
-  "version": "0.0.0",
-  "description": "A small library for retrying standard promises on exceptions",
-  "main": "dist/cjs/retriable-promise",
+  "version": "0.1.0",
+  "description": "A simple promise retry implementation that will retry a promise X times before rejecting.",
+  "main": "lib/retriable-promise.js",
   "scripts": {
     "test": "node_modules/testem/testem.js",
     "test-ci": "node_modules/testem/testem.js ci",

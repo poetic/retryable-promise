@@ -1,18 +1,18 @@
 {
-  "name": "retriable-promise",
+  "name": "retryable-promise",
   "version": "0.1.0",
   "description": "A simple promise retry implementation that will retry a promise X times before rejecting.",
-  "main": "lib/retriable-promise.js",
+  "main": "lib/retryable-promise.js",
   "scripts": {
     "test": "node_modules/testem/testem.js",
     "test-ci": "node_modules/testem/testem.js ci",
     "mocha": "node_modules/mocha/bin/mocha --require tests/_helper.js tests/*.js",
-    "build-test": "rm -rf test && node_modules/broccoli-cli/bin/broccoli build test && node_modules/browserify/bin/cmd.js lib/retriable-promise.js --standalone retriablePromise > test/retriable-promise.js",
-    "build-dist": "node_modules/browserify/bin/cmd.js lib/retriable-promise.js --standalone retriablePromise > dist/retriable-promise.js"
+    "build-test": "rm -rf test && node_modules/broccoli-cli/bin/broccoli build test && node_modules/browserify/bin/cmd.js lib/retryable-promise.js --standalone retryablePromise > test/retryable-promise.js",
+    "build-dist": "node_modules/browserify/bin/cmd.js lib/retryable-promise.js --standalone retryablePromise > dist/retryable-promise.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/poetic/retriable-promise"
+    "url": "git://github.com/poetic/retryable-promise"
   },
   "keywords": [
     "promise",
@@ -22,9 +22,9 @@
   "author": "Jake Craige <jake@poeticsystems.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/poetic/retriable-promise/issues"
+    "url": "https://github.com/poetic/retryable-promise/issues"
   },
-  "homepage": "https://github.com/poetic/retriable-promise",
+  "homepage": "https://github.com/poetic/retryable-promise",
   "devDependencies": {
     "broccoli": "^0.12.3",
     "broccoli-cli": "0.0.1",

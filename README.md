@@ -1,4 +1,4 @@
-# retriable-promise
+# retryable-promise
 
 A simple promise retry implementation that will retry a promise X times before
 rejecting.
@@ -7,7 +7,7 @@ rejecting.
 
 ## Installation
 
-* `npm install --save retriable-promise`
+* `npm install --save retryable-promise`
 
 ## Usage
 

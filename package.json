@@ -31,6 +31,7 @@
     "broccoli-env": "0.0.1",
     "broccoli-merge-trees": "^0.1.4",
     "broccoli-static-compiler": "^0.1.4",
+    "browserify": "^5.11.2",
     "chai": "^1.9.1",
     "mocha": "^1.21.4",
     "rsvp": "^3.0.13",

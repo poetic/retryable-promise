@@ -1,0 +1,39 @@
+{
+  "name": "retriable-promise",
+  "version": "0.0.0",
+  "description": "A small library for retrying standard promises on exceptions",
+  "main": "dist/cjs/retriable-promise",
+  "scripts": {
+    "test": "node_modules/testem/testem.js",
+    "test-ci": "node_modules/testem/testem.js ci",
+    "mocha": "node_modules/mocha/bin/mocha --require tests/_helper.js tests/*.js",
+    "build-test": "rm -rf test && node_modules/broccoli-cli/bin/broccoli build test && node_modules/browserify/bin/cmd.js lib/retriable-promise.js --standalone retriablePromise > test/retriable-promise.js",
+    "build-dist": "node_modules/browserify/bin/cmd.js lib/retriable-promise.js --standalone retriablePromise > dist/retriable-promise.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/poetic/retriable-promise"
+  },
+  "keywords": [
+    "promise",
+    "retry",
+    "es6"
+  ],
+  "author": "Jake Craige <jake@poeticsystems.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poetic/retriable-promise/issues"
+  },
+  "homepage": "https://github.com/poetic/retriable-promise",
+  "devDependencies": {
+    "broccoli": "^0.12.3",
+    "broccoli-cli": "0.0.1",
+    "broccoli-env": "0.0.1",
+    "broccoli-merge-trees": "^0.1.4",
+    "broccoli-static-compiler": "^0.1.4",
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4",
+    "rsvp": "^3.0.13",
+    "testem": "^0.6.18"
+  }
+}

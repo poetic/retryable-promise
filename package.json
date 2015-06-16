@@ -1,6 +1,6 @@
 {
   "name": "retryable-promise",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple promise retry implementation that will retry a promise X times before rejecting.",
   "main": "lib/retryable-promise.js",
   "scripts": {

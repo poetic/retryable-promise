@@ -4,10 +4,13 @@ module.exports = function (fn, options) {
     options = {};
   }
 
-  var retriesLeft = options.maxRetry || 3;
+  var maxRetry = options.maxRetry || 3;
+  var retriesLeft = maxRetry;
 
   var retry = function() {
-    return fn().catch(function(err){
+    var tryCount = maxRetry - retriesLeft + 1;
+
+    return fn(tryCount).catch(function(err){
       if(retriesLeft === 0) {
         throw err;
       }
